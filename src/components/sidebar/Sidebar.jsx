@@ -12,12 +12,13 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { Button } from "@mui/material";
 
 import { SidebarOption } from "./SidebarOption";
+import "./Sidebar.css";
 
 export const Sidebar = () => {
   return (
     <div className="sidebar">
       {/* Twitterアイコン */}
-      <TwitterIcon />
+      <TwitterIcon className="sidebar__twitterIcon" />
 
       {/* sidebarOption */}
       <SidebarOption text="ホーム" Icon={HomeIcon} />
@@ -30,7 +31,9 @@ export const Sidebar = () => {
       <SidebarOption text="もっと見る" Icon={MoreHorizIcon} />
 
       {/* ツイートボタン */}
-      <Button variant="outlined" className="sidebar__tweet">ツイートする</Button>
+      <Button variant="outlined" className="sidebar__tweet">
+        ツイートする
+      </Button>
     </div>
   );
 };

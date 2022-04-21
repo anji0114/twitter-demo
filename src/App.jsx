@@ -1,9 +1,15 @@
 import { Sidebar } from "./components/sidebar/Sidebar";
+import { Timeline } from "./components/timeline/Timeline";
+import "./style.css"
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Sidebar className="sidebar__twitterIcon" />
+      {/* timeLine */}
+      <Timeline/>
+
+      {/* widget */}
     </div>
   );
 }
